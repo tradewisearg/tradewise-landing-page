@@ -26,7 +26,7 @@ const Offer = () => {
                         </span>
 
                         <span className="discount-highlight">
-                            $700 USD
+                            $400 USD
                         </span>
 
                         <span className="discount-highlight2">
