@@ -41,7 +41,7 @@ const Offer = () => {
                         <video
                             id="presentation-video"
                             loop
-                            poster="./img/fondo.jpg"
+                            poster="./img/fondo.png"
                             muted
                             playsInline
                         >
@@ -62,17 +62,17 @@ const Offer = () => {
                     <h2 style={{ marginBottom: '20px' }}>Lo que incluye la Lista de Proveedores</h2>
                     <div className="products-grid">
                         <div className="product-card">
-                            <img src="/img/ropa.jpg" alt="Proveedores de Ropa y Calzado" />
+                            <img src="/img/ropa.png" alt="Proveedores de Ropa y Calzado" />
                             <h3>Ropa y Calzado</h3>
                             <p>Prendas exclusivas directas en Argentina.</p>
                         </div>
                         <div className="product-card">
-                            <img src="/img/tecno.jpg" alt="Proveedores de Tecnología y Gadgets" />
+                            <img src="/img/tecno.png" alt="Proveedores de Tecnología y Gadgets" />
                             <h3>Tecnología y Gadgets</h3>
                             <p>Acceso a distribuidores mayoristas de electrónica.</p>
                         </div>
                         <div className="product-card">
-                            <img src="/img/bazar.jpg" alt="Artículos para el Hogar" />
+                            <img src="/img/bazar.png" alt="Artículos para el Hogar" />
                             <h3>Artículos para el Hogar</h3>
                             <p>Fuentes verificadas de decoración, bazar y accesorios.</p>
                         </div>

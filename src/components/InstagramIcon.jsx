@@ -1,16 +1,15 @@
 import React from 'react';
 
-// Se recomienda exportar la función al final o usar una función flecha con un return implícito.
 const InstagramIcon = () => {
-    const instagramLink = "https://www.instagram.com/tradewise.ecom";
+    const instagramLink = "https://www.instagram.com/ussp.joa";
 
     return (
         <a
             href={instagramLink}
-            className="instagram-float-icon" // Clase para posicionamiento fijo (flotante)
+            className="instagram-float-icon"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Síguenos en Instagram" // Buena práctica de accesibilidad
+            aria-label="Síguenos en Instagram"
         >
 
                 <div className="instagram-icon-wrapper">
