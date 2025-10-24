@@ -15,21 +15,17 @@ const Offer = () => {
         <section className="section hero-section">
             <div className="content-wrapper">
                 <h1 className="hero-title">Lista Exclusiva de Proveedores PREMIUM</h1>
-                <p className="hero-subtitle">Dejamos de ser intermediarios para ayudarte a evitar demoras y márgenes de ganancia bajos. Encontrá contactos directos y verificá el stock al instante.</p>
+                <p className="hero-subtitle">Dejamos de ser intermediarios para ayudarte a evitar demoras y márgenes de ganancia bajos. <strong>Encontrá contactos directos y verificá el stock al instante.</strong></p>
 
                 <div className="cta-action-area">
 
                     <a className="cta-button large" href="https://wa.me/+541123741241?text=¡Quiero%20la%20lista%20ahora!" >
 
-                        <span className=".cta-text">
-                            Comprar por
+                        <span className="cta-text">
+                            Accedé a la lista completa por solo
                         </span>
 
                         <span className="discount-highlight">
-                            $400 USD
-                        </span>
-
-                        <span className="discount-highlight2">
                             $199 USD
                         </span>
                     </a>
@@ -59,7 +55,7 @@ const Offer = () => {
                 </div>
 
                 <div className="product-showcase">
-                    <h2 style={{ marginBottom: '20px' }}>Lo que incluye la Lista de Proveedores</h2>
+                    <h2 style={{ marginBottom: '20px' }}>Algunas de las categorías</h2>
                     <div className="products-grid">
                         <div className="product-card">
                             <img src="/img/ropa.png" alt="Proveedores de Ropa y Calzado" />
@@ -77,9 +73,22 @@ const Offer = () => {
                             <p>Fuentes verificadas de decoración, bazar y accesorios.</p>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                    <div className="logo-marquee-wrapper">
+                        <div className="logo-marquee">
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+                        </div>
+
+                    </div>
+                    
+                    </div>
+                </div>
         </section>
     );
 };

@@ -12,12 +12,10 @@ import Disclaimer from './components/Disclaimer';
 import Terms from './components/Terms';
 import './App.css';
 import './index.css';
-import LogoStrip from './components/LogoStrip';
 
 const LandingPageContent = () => (
     <>
         <Offer />
-        <LogoStrip />
         <Testimonials />
         <Guarantee />
     </>
