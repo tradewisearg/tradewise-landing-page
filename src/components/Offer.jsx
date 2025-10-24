@@ -51,7 +51,7 @@ const Offer = () => {
                             </button>
                         )}
                     </div>
-                    <p style={{ marginTop: '10px', fontSize: '0.9em', color: '#666' }}>Haz clic para ver un breve adelanto de la calidad.</p>
+                    <p className="video-description">Haz clic para ver un breve adelanto de la calidad.</p>
                 </div>
 
                 <div className="product-showcase">
@@ -83,12 +83,53 @@ const Offer = () => {
                             <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
                             <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
                             <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
+                            <img src="/logos/samsung.png" alt="SAMSUNG" className="logo-image logo-samsung" />
+                            <img src="/logos/apple.png" alt="APPLE" className="logo-image logo-filter" />
+                            <img src="/logos/xiaomi.png" alt="XIAOMI" className="logo-image" />
+                            <img src="/logos/lataffa.png" alt="LATAFFA" className="logo-image" />
+                            <img src="/logos/ps5.png" alt="PS5" className="logo-image logo-adjust-height" />
+                            <img src="/logos/vs.png" alt="VS" className="logo-image logo-adjust-height" />
+                            <img src="/logos/karsell.png" alt="KARSELL" className="logo-image logo-filter" />
+
                         </div>
 
                     </div>
-                    
-                    </div>
+
                 </div>
+            </div>
         </section>
     );
 };
