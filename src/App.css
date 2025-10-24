@@ -928,6 +928,18 @@ section {
 /* 15. MEDIA QUERIES (RESPONSIVE) */
 /* ========================================================================= */
 
+@media (max-width: 900px) {
+  .products-grid {
+    margin-left: 60px;
+  }
+
+  .product-card {
+    max-width: 200px;
+    padding: 15px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .video-description {
     margin-top: 10px;
