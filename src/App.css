@@ -57,37 +57,6 @@ section {
 }
 
 /* ========================================================================= */
-/* 2. BARRA DE URGENCIA (URGENT BAR) */
-/* ========================================================================= */
-
-.urgent-bar {
-  background-color: var(--color-secondary);
-  color: #1a1a1a;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  position: sticky;
-  top: 0;
-  z-index: 1001;
-  animation: shadow-pulse 3s infinite ease-in-out;
-}
-
-@keyframes shadow-pulse {
-  0% {
-    box-shadow: 0 0 0 rgba(255, 193, 7, 0);
-  }
-
-  50% {
-    box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
-  }
-
-  100% {
-    box-shadow: 0 0 0 rgba(255, 193, 7, 0);
-  }
-}
-
-/* ========================================================================= */
 /* 3. HERO SECTION (PRIMERA VISTA) Y CTA GENERAL */
 /* ========================================================================= */
 
@@ -818,78 +787,6 @@ section {
 }
 
 /* ========================================================================= */
-/* 13. BARRA FLOTANTE DEL TEMPORIZADOR */
-/* ========================================================================= */
-
-.floating-timer-bar {
-  height: 38px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1050;
-  background-color: #dc3545;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  padding: 8px 15px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.floating-timer-bar.is-visible {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.timer-content {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.timer-text {
-  font-weight: 700;
-  font-size: 0.8em;
-}
-
-.timer-display {
-  display: flex;
-  font-size: 0.8em;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-.time-separator {
-  margin: 0 4px;
-}
-
-.timer-message {
-  font-size: 1em;
-  margin-right: 15px;
-  line-height: 1;
-}
-
-.timer-numbers {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.time-box {
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 1.1em;
-  line-height: 1;
-}
-
-/* ========================================================================= */
 /* 14. ÍCONOS FLOTANTES (WHATSAPP, INSTAGRAM, FAQ) */
 /* ========================================================================= */
 
@@ -1075,13 +972,6 @@ section {
 }
 
 @media (max-width: 600px) {
-  .timer-numbers {
-    font-size: 2em;
-    gap: 8px;
-  }
-}
-
-@media (max-width: 600px) {
   .trust-badges-grid {
     flex-direction: column;
     align-items: stretch;
@@ -1177,22 +1067,4 @@ section {
   .payment-icons-strip {
     max-width: 90%;
   }
-}
-
-@media (max-width: 600px) {
-  .floating-timer-bar {
-    padding: 5px 10px;
-    flex-direction: column;
-  }
-
-  .timer-message {
-    margin-right: 0;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-  }
-
-  .timer-numbers {
-    font-size: 0.9em;
-  }
-
 }
