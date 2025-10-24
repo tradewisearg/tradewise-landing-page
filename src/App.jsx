@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import WhatsappIcon from './components/WhatsappIcon'; 
 import InstagramIcon from './components/InstagramIcon'; 
 import FAQIcon from './components/FAQIcon'; 
-import FloatingTimer from './components/FloatingTimer'; 
 import Disclaimer from './components/Disclaimer';
 import Terms from './components/Terms';
 import './App.css';
@@ -77,7 +76,6 @@ const App = () => {
             
             <Footer />
         
-            {currentPage === 'landing' && <FloatingTimer />}
             {currentPage === 'landing' && <WhatsappIcon />}
             {currentPage === 'landing' && <InstagramIcon />}
             {currentPage === 'landing' && <FAQIcon />}
