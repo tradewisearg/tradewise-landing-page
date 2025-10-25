@@ -9,6 +9,11 @@ const Header = () => {
                     <span className="logo-tagline"> | Proveedores Verificados</span>
                 </a>
 
+                <nav className="header-nav">
+                    <a href="#faq" className="nav-link">FAQ</a>
+                    <a href="#terminos" className="nav-link">Términos</a>
+                </nav>
+
                 <a 
                     href="#cta-final"
                     className="header-cta-button"
