@@ -6,7 +6,7 @@
 
 :root {
   --color-primary: #00aaff;
-  --color-secondary: #ffc107;
+  --color-secondary: #e3ad0c;
   --color-dark-bg: #121212;
   --color-text: #f4f4f4;
   --color-guarantee-bg: #1a1a1a;
@@ -19,9 +19,27 @@ body {
   padding: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  background-color: var(--color-dark-bg);
   color: var(--color-text);
   overflow-x: hidden;
+  background-image: url("/img/background.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: var(--color-dark-bg);
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 h1,
@@ -273,19 +291,8 @@ section {
 /* 5. PRODUCT SHOWCASE / CATEGORÍAS (EL BOX PRINCIPAL) */
 /* ========================================================================= */
 
-.product-showcase {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5),
-    0 0 15px rgba(1, 28, 42, 0.774);
-  max-width: 1300px;
-  margin: 4rem auto;
-  text-align: center;
-  padding: 50px 20px 0 20px;
-  overflow: hidden;
-}
-
 .product-showcase h2 {
+  text-align: center;
   margin-bottom: 40px;
   font-size: 2rem;
   color: var(--color-primary);
@@ -300,7 +307,7 @@ section {
 
 .product-card {
   width: 100%;
-  max-width: 250px;
+  max-width: 320px;
   text-align: center;
   border: 1px solid #035E8C;
   overflow: hidden;
@@ -350,9 +357,8 @@ section {
 }
 
 .logo-marquee-wrapper {
-  width: 955px;
+  width: 1300px;
   overflow: hidden;
-  padding: 0 20px;
 }
 
 .logo-image {
@@ -392,7 +398,6 @@ section {
   padding-top: 0;
   padding: 40px 0;
   text-align: center;
-  background-color: var(--color-dark-bg);
   color: var(--color-text);
 }
 
@@ -486,7 +491,7 @@ section {
 /* ========================================================================= */
 
 .guarantee-section {
-  background-color: #121212;
+  background-color: transparent;
   text-align: center;
 }
 
@@ -502,7 +507,7 @@ section {
   border-radius: 13px;
   max-width: 1300px;
   margin: 4rem auto;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5),
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 1),
     0 0 15px rgba(1, 28, 42, 0.774);
   text-align: center;
 }
@@ -510,6 +515,11 @@ section {
 .guarantee-box h3 {
   margin-top: 0;
   font-size: 1.5rem;
+}
+
+.guarantee-details {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .guarantee-text {
@@ -738,12 +748,11 @@ section {
 }
 
 .copyright-text {
-  margin: 10px 0 0 0;
-  color: #6c757d;
-  font-size: 0.85em;
-  padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
   width: 100%;
+  color: #adb5bd;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
 .copyright {
@@ -838,51 +847,6 @@ section {
 .legal-content a {
   color: var(--color-primary);
   text-decoration: underline;
-}
-
-/* ========================================================================= */
-/* 12. CONTADOR DE TIEMPO (COUNTDOWN TIMER) */
-/* ========================================================================= */
-
-.countdown-timer {
-  text-align: center;
-  margin: 30px 0;
-  padding: 15px;
-  background-color: #fce4ec;
-  border-radius: 10px;
-  border: 2px solid #e91e63;
-  max-width: 400px;
-  margin: 30px auto;
-}
-
-.timer-justification {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #e91e63;
-  margin-bottom: 10px;
-}
-
-.timer-numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #4a148c;
-}
-
-.time-box {
-  background-color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.timer-tag {
-  margin-top: 5px;
-  font-size: 0.9em;
-  color: #e91e63;
 }
 
 /* ========================================================================= */
@@ -1017,11 +981,6 @@ section {
   color: var(--color-text);
 }
 
-.infobar-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
-}
-
 .infobar-item p {
   margin: 3px 0;
   line-height: 1.1;
@@ -1036,13 +995,20 @@ section {
 .infobar-item .small-text {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #ccc;
 }
 
 .infobar-item.trust {
-  background-color: #1a1a1a;
+  background-color: var(--color-guarantee-bg);
   color: var(--color-secondary);
   border: 1px solid var(--color-secondary);
+}
+
+.infobar-item.trust:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-secondary);
+  color: var(--color-dark-bg);
+  opacity: 0.8;
 }
 
 .infobar-item.cta-link {
@@ -1051,17 +1017,43 @@ section {
   border: 1px solid var(--color-primary);
 }
 
+.infobar-item.cta-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  background-color: var(--color-primary);
+  color: var(--color-dark-bg);
+  opacity: 0.8;
+}
+
 .infobar-item.benefit-link {
-  background-color: #1a1a1a;
+  background-color: var(--color-guarantee-bg);
   color: #28a745;
   border: 1px solid #28a745;
 }
 
-.infobar-item.faq-link {
-  background-color: #1a1a1a;
-  color: #9e0505;
-  border: 1px solid #9e0505;
+.infobar-item.benefit-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  background-color: #28a745;
+  color: var(--color-dark-bg);
+  opacity: 0.8;
 }
+
+.infobar-item.faq-link {
+  background-color: var(--color-guarantee-bg);
+  color: #b70404;
+  border: 1px solid #b70404;
+}
+
+.infobar-item.faq-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  background-color: #b70404;
+  color: var(--color-dark-bg);
+  opacity: 0.8;
+}
+
+
 
 
 /* ========================================================================= */
@@ -1079,7 +1071,6 @@ section {
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
   margin-bottom: 20px;
-  /* Espacio debajo del botón */
   display: inline-block;
 }
 
@@ -1102,6 +1093,11 @@ section {
   .product-card {
     max-width: 200px;
     padding: 15px;
+  }
+
+  .product-showcase h2 {
+    font-size: 1.7rem;
+    display: center;
   }
 }
 
@@ -1265,5 +1261,19 @@ section {
   .header-cta-button {
     padding: 8px 15px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-carousel h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .testimonial-card.active {
+      flex: 0 0 90%;
+    }
+
   }
 }

@@ -19,7 +19,10 @@ const Offer = () => {
 
                 <div className="cta-action-area">
 
-                    <a className="cta-button large" href="https://wa.me/+541123741241?text=¡Quiero%20la%20lista%20ahora!" >
+                    <a className="cta-button large"
+                        href="https://wa.me/+541123612504?text=¡Quiero%20la%20lista%20ahora!"
+                        target="_blank"
+                        rel="noopener noreferrer" >
 
                         <span className="cta-text">
                             Accedé a la lista completa por solo
