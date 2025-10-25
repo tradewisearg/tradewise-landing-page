@@ -10,6 +10,7 @@
   --color-dark-bg: #121212;
   --color-text: #f4f4f4;
   --color-guarantee-bg: #1a1a1a;
+  --color-testimonial-bg: #00aaff;
 }
 
 body {
@@ -30,9 +31,67 @@ h3 {
 }
 
 section {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 3rem auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
+}
+
+
+/* ========================================================================= */
+/* 0,5. BARRA DE NAVEGACIÓN (HEADER/NAVBAR) */
+/* ========================================================================= */
+
+.main-header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(18, 18, 18, 0.95); 
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--color-text);
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.logo-tagline {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-top: -5px;
+}
+
+.header-cta-button {
+    background-color: var(--color-primary); 
+    color: var(--color-dark-bg); 
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.header-cta-button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
 }
 
 /* ========================================================================= */
@@ -215,11 +274,11 @@ section {
   border-radius: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5),
     0 0 15px rgba(1, 28, 42, 0.774);
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 4rem auto;
   text-align: center;
   padding: 50px 20px 0 20px;
-  overflow: hidden; /* Necesario para la animación de logos */
+  overflow: hidden;
 }
 
 .product-showcase h2 {
@@ -287,7 +346,7 @@ section {
 }
 
 .logo-marquee-wrapper {
-  width: 955px; /* Valor fijo, considerar usar 100% si el padre tiene max-width */
+  width: 955px;
   overflow: hidden;
   padding: 0 20px;
 }
@@ -373,7 +432,7 @@ section {
 }
 
 .testimonial-card.active {
-  background-color: var(--color-guarantee-bg);
+  background-color: var(--color-testimonial-bg);
   color: #fff;
   opacity: 1;
   transform: scale(1.05);
@@ -437,7 +496,7 @@ section {
   color: #00aaff;
   padding: 50px 20px;
   border-radius: 13px;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 4rem auto;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5),
     0 0 15px rgba(1, 28, 42, 0.774);
@@ -509,23 +568,56 @@ section {
 /* 9. FAQ SECTION (BLOQUE DE PREGUNTAS FRECUENTES) */
 /* ========================================================================= */
 
-.faq-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #1a1a1a;
-  border-top: 1px solid #333;
-  max-width: 1200px;
-  margin: 4rem auto;
-  border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5),
-    0 0 15px rgba(0, 170, 255, 0.1);
+
+
+.faq-page-section {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  margin-top: 0;
+  background-color: var(--color-dark-bg);
 }
 
-.faq-title {
+.faq-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  color: #ccc;
+  font-size: 1.05em;
+}
+
+.faq-content h1 {
+  color: #ccc;
+  font-size: 2.5em;
+  font-weight: 900;
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 15px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.faq-content h2 {
   color: var(--color-primary);
-  margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.5em;
+  font-weight: 900;
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.faq-content h3 {
+  color: var(--color-primary);
+  font-size: 1.6em;
+  font-weight: 800;
+  padding-left: 10px;
+  border-left: 4px solid var(--color-primary);
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .faq-list {
@@ -549,14 +641,6 @@ section {
   color: var(--color-text);
   margin: 0 0 10px 0;
   font-weight: 700;
-}
-
-.faq-icon {
-  width: 40px;
-  height: 40px;
-  color: var(--color-primary);
-  stroke-width: 3;
-  min-width: 22px;
 }
 
 .faq-answer {
@@ -685,6 +769,17 @@ section {
   color: #ccc;
   font-size: 1.05em;
 }
+
+.legal-content h1 {
+  color: #ccc;
+  font-size: 2.5em;
+  font-weight: 900;
+  border-bottom: 3px solid var(--color-secondary);
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 
 .legal-content h2 {
   color: var(--color-primary);
@@ -891,37 +986,104 @@ section {
   transition: opacity 0.3s ease-in-out;
 }
 
-.faq-float-icon {
-  position: fixed;
-  right: 20px;
-  z-index: 10001;
-  bottom: 160px;
-  display: block;
+/* ========================================================================= */
+/* 15. BARRAS LATERALES / INFOBAR VERTICAL */
+/* ========================================================================= */
+.vertical-infobar {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 950;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.faq-icon-wrapper {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: var(--color-primary, #00aaff);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.infobar-item {
+    width: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
 }
 
-.faq-icon-wrapper:hover {
-  transform: scale(1.1);
-  background-color: #0088cc;
+.infobar-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
-.faq-text {
-  color: white;
-  font-weight: bold;
-  font-size: 1.1rem;
+.infobar-item p {
+    margin: 3px 0;
+    line-height: 1.1;
 }
+
+.infobar-item span {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.infobar-item .small-text {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.infobar-item.trust {
+    background-color: #1a1a1a;
+        color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+.infobar-item.cta-link {
+    background-color: var(--color-guarantee-bg); 
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.infobar-item.benefit-link {
+    background-color: #1a1a1a;
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.infobar-item.faq-link {
+    background-color: #1a1a1a;
+    color: #9e0505;
+    border: 1px solid #9e0505;
+}
+
+
+/* ========================================================================= */
+/* 15. BACK BUTTON */
+/* ========================================================================= */
+
+.back-button {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 20px; /* Espacio debajo del botón */
+    display: inline-block;
+}
+
+.back-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-dark-bg);
+}
+
 
 
 /* ========================================================================= */
@@ -1079,4 +1241,25 @@ section {
   .payment-icons-strip {
     max-width: 90%;
   }
+}
+
+@media (max-width: 1024px) {
+    .vertical-infobar {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo {
+        font-size: 1.3rem;
+    }
+    
+    .header-cta-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }

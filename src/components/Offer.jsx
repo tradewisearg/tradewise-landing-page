@@ -15,7 +15,7 @@ const Offer = () => {
         <section className="section hero-section">
             <div className="content-wrapper">
                 <h1 className="hero-title">Lista Exclusiva de Proveedores PREMIUM</h1>
-                <p className="hero-subtitle">Dejamos de ser intermediarios para ayudarte a evitar demoras y márgenes de ganancia bajos. <strong>Encontrá contactos directos y verificá el stock al instante.</strong></p>
+                <p className="hero-subtitle">Deja de perder tiempo con proveedores falsos. Accede a nuestra lista verificada. <strong>Encontrá contactos directos y verificá el stock al instante.</strong></p>
 
                 <div className="cta-action-area">
 

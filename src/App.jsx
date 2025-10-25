@@ -6,14 +6,16 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer'; 
 import WhatsappIcon from './components/WhatsappIcon'; 
 import InstagramIcon from './components/InstagramIcon'; 
-import FAQIcon from './components/FAQIcon'; 
 import Disclaimer from './components/Disclaimer';
 import Terms from './components/Terms';
+import Header from './components/Header';
+import Infobar from './components/InfoBar';
 import './App.css';
 import './index.css';
 
 const LandingPageContent = () => (
     <>
+        <Header />
         <Offer />
         <Testimonials />
         <Guarantee />
@@ -78,7 +80,7 @@ const App = () => {
         
             {currentPage === 'landing' && <WhatsappIcon />}
             {currentPage === 'landing' && <InstagramIcon />}
-            {currentPage === 'landing' && <FAQIcon />}
+            {currentPage === 'landing' && <Infobar />}
         </>
     );
 };

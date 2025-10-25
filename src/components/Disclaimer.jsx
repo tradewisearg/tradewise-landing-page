@@ -1,9 +1,13 @@
 import React from 'react';
+import BackButton from './Backbutton';
+
 
 const Disclaimer = () => {
     return (
         <div className="legal-page-section">
             <div className="legal-content">
+
+                <BackButton />
                 
                 <h1>Aviso Legal y Política de Privacidad</h1>
                 
