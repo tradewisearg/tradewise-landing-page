@@ -42,56 +42,59 @@ section {
 /* ========================================================================= */
 
 .main-header {
-    width: 100%;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: rgba(18, 18, 18, 0.95); 
-    backdrop-filter: blur(5px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0, 170, 255, 0.243);
+  padding: 10px 0;
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--color-text);
-    text-decoration: none;
-    line-height: 1.2;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-text);
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 .logo-tagline {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: var(--color-primary);
-    margin-top: -5px;
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-top: -5px;
 }
 
 .header-cta-button {
-    background-color: var(--color-primary); 
-    color: var(--color-dark-bg); 
-    padding: 5px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
-    transition: background-color 0.3s ease, transform 0.1s ease;
+  background-color: #025179;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+
+
 }
 
 .header-cta-button:hover {
-    background-color: #fff;
-    transform: scale(1.05);
+  background-color: #0080db;
+  transform: scale(1.04);
+  color: #000000;
 }
 
 /* ========================================================================= */
@@ -156,7 +159,7 @@ section {
 .cta-button:hover {
   background-color: #0080db;
   transform: scale(1.04);
-  color: #000000;
+  color: #000;
 }
 
 .cta-button.large {
@@ -164,7 +167,7 @@ section {
   padding: 20px 40px;
 }
 
-.cta-button .cta-text {
+.cta-button {
   font-size: 1.5rem;
   margin-right: 10px;
   font-weight: 700;
@@ -259,6 +262,7 @@ section {
   border-left: 25px solid var(--color-primary);
   transform: translateX(8px);
 }
+
 .video-description {
   margin-top: 10px;
   font-size: 0.9em;
@@ -882,17 +886,17 @@ section {
 }
 
 /* ========================================================================= */
-/* 14. ÍCONOS FLOTANTES (WHATSAPP, INSTAGRAM, FAQ) */
+/* 14. ÍCONOS FLOTANTES (calendly, INSTAGRAM, FAQ) */
 /* ========================================================================= */
 
-.whatsapp-float-icon {
+.calendly-float-icon {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 9999;
   width: 60px;
   height: 60px;
-  background-color: #25D366;
+  background-color: #006bff;
   border-radius: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -903,13 +907,13 @@ section {
   text-decoration: none;
 }
 
-.whatsapp-float-icon:hover {
+.calendly-float-icon:hover {
   width: 220px;
-  background-color: #128C7E;
+  background-color: #004796;
   transform: scale(1.05);
 }
 
-.whatsapp-icon-wrapper {
+.calendly-icon-wrapper {
   width: 60px;
   height: 60px;
   display: flex;
@@ -918,19 +922,18 @@ section {
   flex-shrink: 0;
 }
 
-.whatsapp-float-icon svg {
+.calendly-float-icon svg {
   width: 35px;
   height: 35px;
   fill: white;
 }
 
-.whatsapp-float-icon:hover .whatsapp-text {
+.calendly-float-icon:hover .calendly-text {
   opacity: 1;
 }
 
-.whatsapp-text {
-  margin-left: 10px;
-  margin-right: 8px;
+.calendly-text {
+  margin-left: 15px;
   font-size: 14px;
   font-weight: 600;
   color: white;
@@ -990,74 +993,74 @@ section {
 /* 15. BARRAS LATERALES / INFOBAR VERTICAL */
 /* ========================================================================= */
 .vertical-infobar {
-    position: fixed;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    z-index: 950;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .infobar-item {
-    width: 120px;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-text);
+  width: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .infobar-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 .infobar-item p {
-    margin: 3px 0;
-    line-height: 1.1;
+  margin: 3px 0;
+  line-height: 1.1;
 }
 
 .infobar-item span {
-    font-size: 1.5rem;
-    display: block;
-    margin-bottom: 5px;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .infobar-item .small-text {
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: #ccc;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #ccc;
 }
 
 .infobar-item.trust {
-    background-color: #1a1a1a;
-        color: var(--color-secondary);
-    border: 1px solid var(--color-secondary);
+  background-color: #1a1a1a;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
 }
 
 .infobar-item.cta-link {
-    background-color: var(--color-guarantee-bg); 
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
+  background-color: var(--color-guarantee-bg);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 .infobar-item.benefit-link {
-    background-color: #1a1a1a;
-    color: #28a745;
-    border: 1px solid #28a745;
+  background-color: #1a1a1a;
+  color: #28a745;
+  border: 1px solid #28a745;
 }
 
 .infobar-item.faq-link {
-    background-color: #1a1a1a;
-    color: #9e0505;
-    border: 1px solid #9e0505;
+  background-color: #1a1a1a;
+  color: #9e0505;
+  border: 1px solid #9e0505;
 }
 
 
@@ -1066,22 +1069,23 @@ section {
 /* ========================================================================= */
 
 .back-button {
-    background-color: transparent;
-    border: 1px solid var(--color-primary);
-    color: var(--color-primary);
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 20px; /* Espacio debajo del botón */
-    display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 20px;
+  /* Espacio debajo del botón */
+  display: inline-block;
 }
 
 .back-button:hover {
-    background-color: var(--color-primary);
-    color: var(--color-dark-bg);
+  background-color: var(--color-primary);
+  color: var(--color-dark-bg);
 }
 
 
@@ -1178,24 +1182,24 @@ section {
 }
 
 @media (max-width: 500px) {
-  .whatsapp-float-icon {
+  .calendly-float-icon {
     width: 50px;
     height: 50px;
     bottom: 14px;
     right: 10px;
   }
 
-  .whatsapp-icon-wrapper {
+  .calendly-icon-wrapper {
     width: 50px;
     height: 50px;
   }
 
-  .whatsapp-float-icon svg {
+  .calendly-float-icon svg {
     width: 30px;
     height: 30px;
   }
 
-  .whatsapp-float-icon:hover {
+  .calendly-float-icon:hover {
     width: 50px;
     transform: none;
   }
@@ -1244,22 +1248,22 @@ section {
 }
 
 @media (max-width: 1024px) {
-    .vertical-infobar {
-        display: none;
-    }
+  .vertical-infobar {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-    .header-nav {
-        display: none;
-    }
+  .header-nav {
+    display: none;
+  }
 
-    .header-logo {
-        font-size: 1.3rem;
-    }
-    
-    .header-cta-button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
+  .header-logo {
+    font-size: 1.3rem;
+  }
+
+  .header-cta-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
 }

@@ -4,12 +4,12 @@ import Testimonials from './components/Testimonials';
 import Guarantee from './components/Guarantee'; 
 import FAQ from './components/FAQ';
 import Footer from './components/Footer'; 
-import WhatsappIcon from './components/WhatsappIcon'; 
 import InstagramIcon from './components/InstagramIcon'; 
 import Disclaimer from './components/Disclaimer';
 import Terms from './components/Terms';
 import Header from './components/Header';
 import Infobar from './components/InfoBar';
+import CalendlyCall from './components/CalendlyIcon';
 import './App.css';
 import './index.css';
 
@@ -78,7 +78,7 @@ const App = () => {
             
             <Footer />
         
-            {currentPage === 'landing' && <WhatsappIcon />}
+            {currentPage === 'landing' && <CalendlyCall />}
             {currentPage === 'landing' && <InstagramIcon />}
             {currentPage === 'landing' && <Infobar />}
         </>

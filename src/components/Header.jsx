@@ -9,14 +9,12 @@ const Header = () => {
                     <span className="logo-tagline"> | Proveedores Verificados</span>
                 </a>
 
-                <nav className="header-nav">
-                    <a href="#faq" className="nav-link">FAQ</a>
-                    <a href="#terminos" className="nav-link">Términos</a>
-                </nav>
-
-                <a 
-                    href="#cta-final"
+                <a
+                    href="https://wa.me/5491123612504?text=Hola,%20quiero%20el%20acceso%20inmediato!"
                     className="header-cta-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Acceso Inmediato"
                 >
                     Acceso Inmediato
                 </a>
